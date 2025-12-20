@@ -31,7 +31,16 @@ if 'chat_history' not in st.session_state:
 
 add_thread(st.session_state['thread_id'])
 
-CONFIG = {'configurable': {'thread_id' : st.session_state['thread_id']}}
+# CONFIG = {'configurable': {'thread_id' : st.session_state['thread_id']}}
+CONFIG = {
+    "configurable": {
+        "thread_id": st.session_state['thread_id']
+    },
+    "metadata": {
+        "thread_id": st.session_state['thread_id']
+    },
+    "run_name": "chat_turn",
+}
 
 st.sidebar.title('Chatbot')
 st.sidebar.button('New Chat', on_click=reset_chat)
