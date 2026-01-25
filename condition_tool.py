@@ -40,7 +40,7 @@ def calculator(first_num: float, second_num: float, operation: Annotated[str, "T
 @tool
 def get_stock_price(ticker: str) -> dict:
     """Fetches the current stock price for a given ticker symbol."""
-    api_url = f"https://www.alphavantage.co/query/function=GLOBAL_QUOTE&symbol={ticker}&apikey=FJHEJDHXLHI7E7AH"
+    api_url = f"https://www.alphavantage.co/query/function=GLOBAL_QUOTE&symbol={ticker}&apikey=*******"
     response = requests.get(api_url)
     data = response.json()
     return data
@@ -92,4 +92,5 @@ def retrieve_all_threads():
 # print(out["messages"][-1].content)
 
 # out = chatbot.invoke({"messages": [HumanMessage(content="what is the stock price of GOOG and if i buy 10 shares how much will it cost me?")]})
+
 # print(out["messages"][-1].content)
