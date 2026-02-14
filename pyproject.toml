@@ -1,0 +1,20 @@
+[project]
+name = "langraph-tutorial"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "faiss-cpu>=1.13.2",
+    "grandalf>=0.8",
+    "ipython>=9.4.0",
+    "langchain>=0.3.26",
+    "langchain-community>=0.3.27",
+    "langchain-openai>=0.3.27",
+    "langgraph>=0.5.2",
+    "langgraph-checkpoint-sqlite>=2.0.11",
+    "openai>=1.95.1",
+    "pypdf>=6.7.0",
+    "streamlit>=1.49.1",
+]
